@@ -159,6 +159,12 @@ The project uses a Fake Job Posting dataset containing:
 - Fraudulent Label
 
 ---
+🌐 Live Demo
+
+Fake Job Posting Detection:
+https://fake-job-posting-detection-kjyzqwhnbh2fyigss7ftr3.streamlit.app/
+
+
 
 ## 🎯 Future Enhancements
 
