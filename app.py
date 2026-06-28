@@ -102,7 +102,7 @@ st.sidebar.success("✅ Genuine Job Posting")
 st.sidebar.error("🚨 Fraudulent Job Posting")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 🧠 Models Compared")ss
+st.sidebar.markdown("### 🧠 Models Compared")
 
 st.sidebar.success("🏆 Logistic Regression (Optimized)")
 
