@@ -132,7 +132,8 @@ streamlit run app.py
 ## 📷 Application Preview
 
 ### Home Page
-<img width="945" height="921" alt="image" src="https://github.com/user-attachments/assets/3afd4a51-5299-4c89-a821-3e56fe013f13" />
+<img width="958" height="936" alt="image" src="https://github.com/user-attachments/assets/07f8bf28-8adc-4769-bf9f-50a1abe01840" />
+
 
 
 ### Genuine Job Prediction
