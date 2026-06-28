@@ -138,8 +138,8 @@ streamlit run app.py
 <img width="958" height="925" alt="WhatsApp Image 2026-06-28 at 8 23 40 PM" src="https://github.com/user-attachments/assets/ba0087bb-eb08-4fdf-8376-36976ba111fd" />
 
 ### Fraudulent Job Prediction
+<img width="953" height="915" alt="WhatsApp Image 2026-06-28 at 8 22 09 PM" src="https://github.com/user-attachments/assets/2834d67d-8bd6-4248-8dd2-cd73973e69e0" />
 
-<img width="958" height="925" alt="WhatsApp Image 2026-06-28 at 8 23 40 PM" src="https://github.com/user-attachments/assets/11896985-2117-4668-9c92-1f91a43158c8" />
 
 ---
 
