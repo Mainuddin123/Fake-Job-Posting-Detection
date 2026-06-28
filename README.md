@@ -144,10 +144,6 @@ streamlit run app.py
 ### Fraudulent Job Prediction
 <img width="947" height="922" alt="image" src="https://github.com/user-attachments/assets/8edad34f-8b68-4199-8247-0f01e0f1224d" />
 
-Live Demo link:
-https://fake-job-posting-detection-mz5gnglqzguurwefi2da5r.streamlit.app/
-
-
 ---
 
 ## 📊 Dataset
@@ -166,11 +162,9 @@ The project uses a Fake Job Posting dataset containing:
 - Fraudulent Label
 
 ---
-🌐 Live Demo
+🌐 Live Streamlit App:
 
-Fake Job Posting Detection:
-
-
+https://fake-job-posting-detection-kjyzqwhnbh2fyigss7ftr3.streamlit.app/
 
 ## 🎯 Future Enhancements
 
@@ -193,9 +187,9 @@ Artificial Intelligence and Data Science Graduate
 
 ## 📬 Connect With Me
 
-**GitHub**
+GitHub Repository:
 
-https://github.com/Mainuddin123
+https://github.com/Mainuddin123/Fake-Job-Posting-Detection
 
 ---
 
