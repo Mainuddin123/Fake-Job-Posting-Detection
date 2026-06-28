@@ -137,12 +137,15 @@ streamlit run app.py
 
 
 ### Genuine Job Prediction
-<img width="942" height="928" alt="image" src="https://github.com/user-attachments/assets/6aed7a79-1b23-40df-869a-4bee6a0a4363" />
+<img width="942" height="927" alt="image" src="https://github.com/user-attachments/assets/f41de5f9-6886-41c6-b716-17937c312c4f" />
+
 
 
 ### Fraudulent Job Prediction
-<img width="945" height="930" alt="image" src="https://github.com/user-attachments/assets/3e86babd-bdfa-43d4-8bb0-2ba123184a23" />
+<img width="947" height="922" alt="image" src="https://github.com/user-attachments/assets/8edad34f-8b68-4199-8247-0f01e0f1224d" />
 
+Live Demo link:
+https://fake-job-posting-detection-mz5gnglqzguurwefi2da5r.streamlit.app/
 
 
 ---
