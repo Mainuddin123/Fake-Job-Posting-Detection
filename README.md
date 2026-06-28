@@ -136,10 +136,12 @@ streamlit run app.py
 
 
 ### Genuine Job Prediction
-<img width="958" height="925" alt="WhatsApp Image 2026-06-28 at 8 23 40 PM" src="https://github.com/user-attachments/assets/ba0087bb-eb08-4fdf-8376-36976ba111fd" />
+<img width="942" height="928" alt="image" src="https://github.com/user-attachments/assets/6aed7a79-1b23-40df-869a-4bee6a0a4363" />
+
 
 ### Fraudulent Job Prediction
-<img width="953" height="915" alt="WhatsApp Image 2026-06-28 at 8 22 09 PM" src="https://github.com/user-attachments/assets/2834d67d-8bd6-4248-8dd2-cd73973e69e0" />
+<img width="945" height="930" alt="image" src="https://github.com/user-attachments/assets/3e86babd-bdfa-43d4-8bb0-2ba123184a23" />
+
 
 
 ---
@@ -163,7 +165,6 @@ The project uses a Fake Job Posting dataset containing:
 🌐 Live Demo
 
 Fake Job Posting Detection:
-https://fake-job-posting-detection-kjyzqwhnbh2fyigss7ftr3.streamlit.app/
 
 
 
