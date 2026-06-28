@@ -132,7 +132,8 @@ streamlit run app.py
 ## 📷 Application Preview
 
 ### Home Page
-<img width="961" height="917" alt="WhatsApp Image 2026-06-28 at 8 18 54 PM" src="https://github.com/user-attachments/assets/0424e969-54e8-4734-9b2f-4acd3d3ec04f" />
+<img width="945" height="921" alt="image" src="https://github.com/user-attachments/assets/3afd4a51-5299-4c89-a821-3e56fe013f13" />
+
 
 ### Genuine Job Prediction
 <img width="958" height="925" alt="WhatsApp Image 2026-06-28 at 8 23 40 PM" src="https://github.com/user-attachments/assets/ba0087bb-eb08-4fdf-8376-36976ba111fd" />
