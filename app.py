@@ -43,26 +43,28 @@ div[data-testid="stForm"]{
 }
 
 /* Button */
-.stButton>button{
+div[data-testid="stForm"] button{
     width:100%;
-    height:55px;
-    background:linear-gradient(90deg,#2563EB,#1D4ED8);
-    color:white;
-    border:none;
-    border-radius:12px;
-    font-size:18px;
-    font-weight:600;
-    letter-spacing:0.5px;
+    height:58px;
+    background:linear-gradient(90deg,#2563EB,#4F46E5,#7C3AED) !important;
+    color:white !important;
+    border:none !important;
+    border-radius:12px !important;
+    font-size:18px !important;
+    font-weight:700 !important;
+    letter-spacing:.5px;
     cursor:pointer;
     transition:all .3s ease;
-    box-shadow:0 4px 12px rgba(37,99,235,.30);
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
 }
 
-.stButton>button:hover{
-    background:linear-gradient(90deg,#1D4ED8,#1E3A8A);
+div[data-testid="stForm"] button:hover{
+    background:linear-gradient(90deg,#1D4ED8,#4338CA,#6D28D9) !important;
+    color:white !important;
     transform:translateY(-2px);
-    box-shadow:0 6px 18px rgba(37,99,235,.40);
+    box-shadow:0 10px 24px rgba(37,99,235,.45);
 }
+
 
 /* Footer */
 footer{
@@ -85,7 +87,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.success("🤖 Machine Learning Project")
+st.sidebar.success("🛡️ AI-Powered Job Fraud Detection")
 
 st.sidebar.markdown("---")
 
@@ -100,10 +102,17 @@ st.sidebar.success("✅ Genuine Job Posting")
 st.sidebar.error("🚨 Fraudulent Job Posting")
 
 st.sidebar.markdown("---")
+st.sidebar.markdown("### 🧠 Models Compared")
 
-st.sidebar.markdown("### 🏆 Best Model")
+st.sidebar.success("🏆 Logistic Regression (Optimized)")
 
-st.sidebar.info("Logistic Regression (Optimized)")
+st.sidebar.markdown("""
+✔ K-Nearest Neighbors (KNN)
+
+✔ Gaussian Naive Bayes
+
+✔ Decision Tree
+""")
 
 st.sidebar.markdown("---")
 
@@ -112,9 +121,13 @@ st.sidebar.markdown("### 💻 Technologies")
 st.sidebar.markdown("""
 🐍 Python
 
-🤖 Scikit-learn
+📊 Pandas
 
-📝 NLP
+🧠 Scikit-learn
+
+📝 NLP (TF-IDF)
+
+💾 Joblib
 
 🎨 Streamlit
 """)
@@ -135,25 +148,15 @@ st.markdown("""
 
 <h1 style="
     color:#1E3A8A;
-    margin-bottom:5px;
+    margin-bottom:0;
     font-size:42px;
 ">
 🛡️ Fake Job Posting Detection
 </h1>
-
-<p style="
-    font-size:20px;
-    color:#555;
-    margin-top:0px;
-">
-Detect Genuine and Fraudulent Job Postings using Machine Learning
-</p>
-
+            
 </div>
 """, unsafe_allow_html=True)
-
-st.markdown("<br>", unsafe_allow_html=True)
-
+st.markdown("", unsafe_allow_html=True)
 
 # -----------------------------
 # Input Form
@@ -292,42 +295,86 @@ if submitted:
         "clean_text": [clean_text]
     })
 
+    # -----------------------------
+    # Hybrid Fraud Detection
+    # -----------------------------
+    fraud_keywords = [
+        "registration fee",
+        "processing fee",
+        "application fee",
+        "bank account",
+        "bank details",
+        "upi",
+        "whatsapp",
+        "telegram",
+        "guaranteed income",
+        "guaranteed salary",
+        "earn $5000",
+        "earn money fast",
+        "earn from home",
+        "work from home",
+        "no interview",
+        "no experience required",
+        "limited vacancies",
+        "limited seats",
+        "pay now",
+        "urgent hiring",
+        "click here",
+        "investment required",
+        "send money",
+        "instant joining"
+    ]
+
+    text = clean_text.lower()
+
+    # Machine Learning Prediction
     prediction = model.predict(input_data)[0]
+
+    # Rule-based override for obvious scams
+    if any(keyword in text for keyword in fraud_keywords):
+        prediction = 1
 
     st.divider()
 
     st.markdown("""
-    <div style="
-    background:#F8FAFC;
-    padding:15px;
-    border-radius:12px;
-    border-left:6px solid #2563EB;
-    margin-bottom:20px;
-    ">
-    <h2 style="color:#1E3A8A;margin:0;">
-    🎯 Prediction Result
-    </h2>s
-    </div>
-    """, unsafe_allow_html=True)
+<div style="
+background:linear-gradient(90deg,#EEF4FF,#F8FBFF);
+padding:18px;
+border-radius:14px;
+border-left:8px solid #2563EB;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+margin-bottom:20px;
+">
+<h2 style="
+margin:0;
+color:#1E3A8A;
+font-size:28px;
+font-weight:700;
+">
+🎯 Prediction Result
+</h2>
+</div>
+""", unsafe_allow_html=True) 
 
     if prediction == 0:
-        st.success("✅ This appears to be a Genuine Job Posting.")
-        # st.balloons() 
+        st.success("✅ Genuine Job Posting Detected\n\nThis job posting appears to be authentic based on the Machine Learning analysis.")
+        # st.balloons()
     else:
-        st.error("🚨 Warning! This appears to be a Fraudulent Job Posting.")
+        st.error("🚨 Fraudulent Job Posting Detected\n\nThis job posting contains suspicious patterns and should be verified before applying.")
+
     st.info(
-    "ℹ️ This application provides predictions using a trained Machine Learning model. Results should be used as a decision-support tool and not as the sole basis for hiring decisions."
-)
+        "ℹ️ This application provides predictions using a trained Machine Learning model. Results should be used as a decision-support tool and not as the sole basis for hiring decisions."
+    )
 
 # -----------------------------
 # Footer
 # -----------------------------
-st.markdown("<br><hr><br>", unsafe_allow_html=True)
+st.markdown("---")
 
 st.markdown("""
 <div style="
 text-align:center;
-padding:18px;
+padding:12px;
 background:#F8FAFC;
 border-radius:12px;
 border:1px solid #D1D5DB;
@@ -335,20 +382,22 @@ color:#4B5563;
 font-size:14px;
 ">
 
-<h4 style="color:#1E3A8A;margin-bottom:8px;">
+<h3 style="color:#1E3A8A;margin-bottom:6px;">
 👨‍💻 Developed by Khaja Mainuddin
 </h4>
 
+<p style="margin:6px 0;">
 Artificial Intelligence and Data Science Graduate
+</p>
 
-<br><br>
+<br>
 
 Built with
 🐍 Python &nbsp;|&nbsp;
 🤖 Scikit-learn &nbsp;|&nbsp;
 🎨 Streamlit
 
-<br><br>
+<br>
 
 © 2026 All Rights Reserved
 

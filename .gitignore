@@ -7,3 +7,4 @@ __pycache__/
 venv/
 .env/
 .DS_Store
+Fake_Job_Posting_Detection_ML/
