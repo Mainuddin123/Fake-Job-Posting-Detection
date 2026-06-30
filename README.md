@@ -188,8 +188,10 @@ Artificial Intelligence and Data Science Graduate
 ## 📬 Connect With Me
 
 GitHub Repository:
-
 https://github.com/Mainuddin123/Fake-Job-Posting-Detection
+
+Linkedin link:
+https://www.linkedin.com/in/khaja-mainuddin-sk-958436348?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ---
 
